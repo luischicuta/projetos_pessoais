@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ingressos 1.0</title>
+    <meta charset="UTF-8">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="" rel="shortcut icon" type="image/x-png"/>
+    <meta name="description" content="Venda de Ingressos de Cinema">
+    <meta name="keywords" content="HTML,CSS,Ingressos,JavaScript">
+    <meta name="author" content="Luis Paulo Cavalcante">
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/>
+</head>
+<body onLoad="start()" id="body">
+
+    <!--=Loading-Modal=-->
+    <aside id="aside">
+        <div class="loading-box">
+            <div class="load-ball-1"></div>
+            <div class="load-ball-2"></div>
+        </div>
+    </aside>
+    <!--=End-Loading-Modal=-->
+
+
+    <main id="main-modal">
+
+        <!--=Main-Modal=-->
+        <div class="main-modal"> <!--=Main-Menu=-->
+        <!--=Exit-Modal=-->
+        <div class="exit">
+            <h3>Deseja mesmo Sair?</h3>
+            <button onClick="window.close()" class="exit-btn">Sair</button>
+            <button onClick="cancel()" class="exit-btn">Cancelar</button>
+        </div>
+        <!--=End-Exit-Modal=-->
+            <h1>Selecione uma Opção</h1>
+            <button onClick="filmModal()" class="btn">Tabela de Peças</button>
+            <button onClock="caixa()" class="btn" style="padding-left:20px !important">Fechamento de Caixa</button>
+            <div class="clock-box"> <!--=Clock-Box=-->
+                <h2>Horário Atual:</h2>
+            <div class="time-box" id="hora"></div>
+            <div class="time-box" id="min"></div>
+            <div class="time-box" id="seg"></div>
+            <button onclick="exit()" class="btn" style="margin-top:10px;padding-left:70px;width:180px;">Sair</button>
+            </div> <!--=End-Clock-Box=-->
+        </div>
+    <!--=End-Main-Modal=-->
+
+        <!--=Film-Modal=-->
+        <div class="film-modal">
+            <h1>Selecione um Filme</h1>
+            <div class="films">
+
+                <!--=Full-Modal=-->
+                <div class="full">
+                    <img src="Assets/css/alert.png" width="50">
+                    <h4>Os ingressos para esta peça esgotaram</h4>
+                    <button onClick="fullExit()" class="exit-btn">OK</button>
+                </div>
+                <!--=End-Full-Modal=-->
+
+                <table width="400" class="table"> <!--=Films-Table=-->
+                    <!--=Identificadores=-->
+                    <tr class="coluna">
+                        <td><strong>NOME</strong></td>
+                        <td><strong>SALA</strong></td>
+                        <td><strong>PREÇO</strong></td>
+                        <td><strong>HORÁRIO</strong></td>
+                        <td><strong>DISPONIVEL</strong></td>
+                    </tr>
+
+                    <!--=Peça 0=-->
+                    <tr class="coluna">
+                        <td onClick="buy()" class="peca0" value="0">Peter Pan</td>
+                        <td>5</td>
+                        <td>R$40,00</td>
+                        <td>15:30</td>
+                        <td><span class="enable" id="aval" title="Lugares Disponíveis">ABERTO</span></td>
+                    </tr>
+
+                    <!--=Peça 1=-->
+                    <tr class="coluna">
+                        <td onClick="buy()" class="peca1" value="1">O Outro</td>
+                        <td>8</td>
+                        <td>R$40,00</td>
+                        <td>15:30</td>
+                        <td><span class="enable" id="aval" title="Lugares Disponíveis">ABERTO</span></td>
+                    </tr>
+
+                    <!--=Peça 2=-->
+                    <tr class="coluna">
+                        <td onClick="buy()" class="peca2" value="2">Darwin</td>
+                        <td>7</td>
+                        <td>R$40,00</td>
+                        <td>16:10</td>
+                        <td><span class="enable" id="aval" title="Lugares Disponíveis">ABERTO</span></td>
+                    </tr>
+
+                    <!--=Peça 3=-->
+                    <tr class="coluna">
+                        <td onClick="full()" class="peca3" value="3">Trocados</td>
+                        <td>2</td>
+                        <td>R$40,00</td>
+                        <td>17:20</td>
+                        <td><span class="disable" id="aval" title="Lugares Esgotados">ESGOTADO</span></td>
+                    </tr>
+                    <!--=Peça 4=-->
+
+                    <tr class="coluna">
+                        <td onClick="buy()" class="peca4" value="4">Choc. Comprimenta</td>
+                        <td>1</td>
+                        <td>R$40,00</td>
+                        <td>16:20</td>
+                        <td><span class="enable" id="aval" title="Lugares Disponíveis">ABERTO</span></td>
+                    </tr>
+                    <!--=Peça 5=-->
+
+                    <tr class="coluna">
+                        <td onClick="buy()" class="peca5" value="5">Palhaços</td>
+                        <td>2</td>
+                        <td>R$40,00</td>
+                        <td>14:10</td>
+                        <td><span class="enable" id="aval" title="Lugares Disponíveis">ABERTO</span></td>
+                    </tr>
+                    <!--=Peça 6=-->
+
+                    <tr class="coluna">
+                        <td onClick="full()" class="peca6" value="6">Musical Fronzen</td>
+                        <td>4</td>
+                        <td>R$40,00</td>
+                        <td>13:00</td>
+                        <td><span class="disable" id="aval" title="Lugares Esgotados">ESGOTADO</span></td>
+                    </tr>
+                    <!--=Peça 7=-->
+
+                    <tr class="coluna">
+                        <td onClick="buy()" class="peca7" value="7">Lendário</td>
+                        <td>3</td>
+                        <td>R$40,00</td>
+                        <td>14:30</td>
+                        <td><span class="enable" id="aval" title="Lugares Disponíveis">ABERTO</span></td>
+                    </tr>
+                    <!--=Peça 8=-->
+
+                    <tr class="coluna">
+                        <td onClick="buy()" class="peca8" value="8">O Pé</td>
+                        <td>6</td>
+                        <td>R$40,00</td>
+                        <td>18:10</td>
+                        <td><span class="enable" id="aval" title="Lugares Disponíveis">ABERTO</span></td>
+                    </tr>
+                </table> <!--=End-Films-Table=-->
+            </div>
+            <button onClick="mainMenu()" class="btn" style="padding-left:60px;width:180px;">Voltar</button>
+        </div>
+        <!--=End-Film-Modal=-->
+
+        <!--=Buy-Modal=-->
+        <div class="buy-modal">
+
+            <!--=Ingresso-Modal=-->
+            <div class="ingresso">
+                <h4 style="margin-top:50px;">Imprima seu Ingresso</h4>
+                <button class="exit-btn">Imprimir</button>
+                <button onClick="mainMenuFinish()" class="exit-btn">Finalizar</button>
+            </div>
+            <!--=End-Ingresso-Modal=-->
+
+                <h1>Compra de Ingresso</h1>
+                <div class="buy">
+                    <form class="form">
+                        <label class="form-text">Número de entradas inteiras:</label>
+                        <input class="form-quest-inteira" type="number">
+                        <br><br>
+                        <label class="form-text">Número de entradas meias:</label>
+                        <input class="form-quest-meia" type="number">
+                        <br><br>
+                        <h5>Caso você seja idoso informe seu CPF para estar isento de pagamento:</h5>
+                        <input class="form-quest-cpf" type="text" placeholder="XXX-XXX-XXX" data-ls-module="charCounter" maxlength="11">-<input type="text" class="cpf2" placeholder="XX" data-ls-module="charCounter" maxlength="2">
+                    </form>
+                </div>
+                <button onClick="buyConfirm()" class="btn" style="padding-left:55px;width:190px;margin-bottom:-30px;">Confirmar</button>
+                <button onClick="buyBack()" class="btn" style="padding-left:60px;width:180px;">Voltar</button>
+            </div>
+        <!--=End-Buy-Modal=-->
+
+        <div class="finish-modal">
+
+            <!--=Pay-Modal=-->
+            <div class="pay">
+                <h4 style="margin-top:30px;">Realize o pagamento com o atendente!</h4>
+                <img src="Assets/css/money.png" width="50">
+                <button onClick="end()" class="btn" style="padding-left:35px;width:180px;height:30px;width:120px;line-height:20px;margin-top:0px;">Feito</button>
+            </div>
+            <!--=End-Pay-Modal=-->
+                <h1>Finalizar Pagamento</h1>
+                <div class="finish">
+                    <h4>Forma de Pagamento:</h4><select class="select">
+                        <option>Cartão de Crédito</option>
+                        <option>Cartão Débito</option>
+                        <option>Dinheiro</option>
+                    </select>
+                </div>
+                <button onClick="finish()" class="btn" style="padding-left:55px;width:190px;margin-bottom:-30px;">Confirmar</button>
+                <button onClick="finishBack()" class="btn" style="padding-left:60px;width:180px;">Voltar</button>
+            </div>
+    </main>
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>

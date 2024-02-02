@@ -1,0 +1,125 @@
+body {
+    margin:0;
+    background:black;
+}
+.container {
+    width:665px;
+    height:350px;
+    background-color:#999;
+    margin:auto;
+    margin-top:50px;
+    padding-top:150px;
+    border:1px solid black;
+    padding-left:15px;
+    border-radius:20px;
+    border:2px solid white;
+}
+.relógio {
+    width:650px;
+    height:150px;
+    background-color:white;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+#hora {
+    width:150px;
+    height:150px;
+    background-color:rgb(104, 103, 103);
+    border-right:1px solid black;
+    border-left:1px solid black;
+    float:left;
+    text-align:center;
+    line-height:150px;
+    margin-right:5px;
+    margin-left:5px;
+    font-size:80px;
+    font-family:Arial;
+    transition:all ease 0.1s;
+    cursor:pointer;
+}
+#min {
+    width:150px;
+    height:150px;
+    background-color:rgb(104, 103, 103);
+    border-right:1px solid black;
+    border-left:1px solid black;
+    float:left;
+    text-align:center;
+    line-height:150px;
+    margin-left:5px;
+    margin-right:5px;
+    font-size:80px;
+    font-family:Arial;
+    transition:all ease 0.1s;
+    cursor:pointer;
+}
+#seg {
+    width:150px;
+    height:150px;
+    background-color:rgb(104, 103, 103);
+    border-right:1px solid black;
+    border-left:1px solid black;
+    float:left;
+    text-align:center;
+    line-height:150px;
+    margin-left:5px;
+    margin-right:5px;
+    font-size:80px;
+    font-family:Arial;
+    transition:all ease 0.1s;
+    cursor:pointer;
+}
+#mil {
+    width:150px;
+    height:150px;
+    background-color:rgb(104, 103, 103);
+    border-right:1px solid black;
+    border-left:1px solid black;
+    float:left;
+    text-align:center;
+    line-height:150px;
+    margin-left:5px;
+    margin-right:5px;
+    font-size:80px;
+    font-family:Arial;
+    transition:all ease 0.1s;
+    cursor:pointer;
+}
+.start {
+    display:inline-block;
+    margin-top:50px;
+    margin-left:175px;
+}
+.stop {
+    display:inline-block;
+}
+.zero {
+    display:inline-block;
+}
+.zero button {
+    color:rgb(71, 70, 70);
+    font-weight:bold;
+    font-size:20px;
+    font-family:arial;
+    cursor:pointer;
+}
+.start button {
+    color:green;
+    font-weight:bold;
+    font-size:20px;
+    font-family:arial;
+    cursor:pointer;
+}
+.stop button {
+    color:red;
+    font-weight:bold;
+    font-size:20px;
+    font-family:arial;
+    cursor:pointer;
+}
+button {
+    width:100px;
+    height:50px;
+    border-color:lightblue;
+    transition:all ease 3s;
+}

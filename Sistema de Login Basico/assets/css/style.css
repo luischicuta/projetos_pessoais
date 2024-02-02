@@ -1,0 +1,22 @@
+body {
+    margin:0;
+}
+.container {
+    width:800px;
+    height:120px;
+    margin:auto;
+    margin-top:20px;
+}
+.formulario {
+    width:190px;
+    height:100px;
+    background-color:lightblue;
+    margin:auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    border:1px solid rgb(92, 149, 168);
+}
+.formulario input {
+    width:186px;
+    outline:0;
+}

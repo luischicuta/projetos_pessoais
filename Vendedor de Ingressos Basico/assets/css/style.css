@@ -1,0 +1,90 @@
+@keyframes painel {
+    0% {width:680px;height:380px;border-radius:20px;}
+    25% {width:680px;height:380px;border-radius:20px;}
+    50% {width:680px;height:380px;border-radius:20px;}
+    75% {width:680px;height:380px;border-radius:20px;}
+    100% {width:680px;height:380px;border-radius:20px;}
+}
+
+
+
+
+
+body {
+    margin:0px;
+    background-color:rgb(13, 5, 44);
+    font-family:arial;
+    font-size:13px;
+    cursor:none;
+}
+.painel {
+    width:600px;
+    height:400px;
+    background-color:rgb(36, 18, 109);
+    margin:auto;
+    margin-top:100px;
+    padding-top:50px;
+}
+.painel:hover {
+    animation-name:painel;
+    animation-duration:1s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    cursor:none;
+    transition:all 1s linear;
+}
+.confirmar {
+    width:300px;
+    height:100px;
+    background-color:rgb(106, 87, 182);
+    margin:auto;
+    margin-top:30px;
+    box-shadow:0px 0.5px 5px 2px black;
+    display:block;
+    transition:all 0.2s linear;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+}
+.confirmar:hover {
+    width:350px;
+    height:100px;
+    transition:all 0.2s linear;
+    cursor:pointer;
+}
+.painel-usuario {
+    width:300px;
+    height:200px;
+    background-color:rgb(165, 164, 172);
+    margin:auto;
+    box-shadow:0px 5px 5px 2px black;
+    cursor:pointer;
+}
+.titulo-painel-usuario {
+    width:300px;
+    height:25px;
+    background-color:rgb(105, 105, 107);
+    text-align:center;
+    padding-top:5px;
+    font-family:arial;
+    font-weight:bold;
+    font-size:15px;
+}
+p {
+    margin-left:20px;
+    font-weight:bold;
+}
+.filme {
+    margin-left:20px;
+    height:30px;
+    border-radius:10px;
+    outline:0;
+    margin-top:-20px;
+}
+.idade {
+    height:20px;
+    outline:0;
+    margin-left:20px;
+    margin-top:-10px;
+    width:30px;
+}
