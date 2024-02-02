@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Exemplo</title>
+    <meta charset="UTF-8">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="" rel="shortcut icon" type="image/x-png"/>
+    <meta name="description" content="Calculadora Super Bombastica">
+    <meta name="keywords" content="HTML,CSS,Calculadora,Números,Calculos,Numbers,Computer,hot,fast,wanderful">
+    <meta name="author" content="Luis Paulo Cavalcante">
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/>
+</head>
+<body>
+<main>
+    <div class="container">
+        <form name="calc" class="calc">
+            <input type="text" name="visor" class="screen" autofocus/>
+        <div class="Cal-Box">
+            <input type="button" value="7" class="btn" onClick="botao(value)"/>
+            <input type="button" value="8" class="btn" onClick="botao(value)"/>
+            <input type="button" value="9" class="btn" onClick="botao(value)"/>
+            <input type="button" value="/" class="btn" onClick="botao(value)"/>
+            <br/>
+            <input type="button" value="4" class="btn" onClick="botao(value)"/>
+            <input type="button" value="5" class="btn" onClick="botao(value)"/>
+            <input type="button" value="6" class="btn" onClick="botao(value)"/>
+            <input type="button" value="*" class="btn" onClick="botao(value)"/>
+            <br/>
+            <input type="button" value="1" class="btn" onClick="botao(value)"/>
+            <input type="button" value="2" class="btn" onClick="botao(value)"/>
+            <input type="button" value="3" class="btn" onClick="botao(value)"/>
+            <input type="button" value="-" class="btn" onClick="botao(value)"/>
+            <br/>
+            <input type="button" value="0" class="btn" onClick="botao(value)"/>
+            <input type="button" value="+" class="btn" onClick="botao(value)"/>
+            <input type="button" value="c" class="btn" onClick="reset()"/>
+            <input type="button" value="=" class="btn" onClick="calcule()"/>
+        </div>
+        </form>
+    </div>
+</main>
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>

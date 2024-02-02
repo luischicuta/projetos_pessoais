@@ -1,0 +1,177 @@
+@keyframes bolinha2 {
+    0%{margin-left:80px;margin-right:0px;margin-top:30px;background-color:royalblue;}
+    25%{margin-left:80px;margin-right:0px;margin-top:60px;background-color:yellow;}
+    50%{margin-left:-5px;margin-right:0px;margin-top:60px;background-color:royalblue;}
+    75%{margin-left:-5px;margin-right:0px;margin-top:30px;background-color:yellow;}
+    100%{margin-left:80px;margin-right:0px;margin-top:30px;background-color:royalblue;}
+}
+@keyframes bolinha1 {
+    0%{margin-left:15px;margin-right:0px;margin-top:30px;background-color:royalblue;}
+    25%{margin-left:15px;margin-right:0px;margin-top:60px;}
+    50%{margin-left:-5px;margin-right:0px;margin-top:60px;}
+    75%{margin-left:-5px;margin-right:0px;margin-top:30px;}
+    100%{margin-left:15px;margin-right:0px;margin-top:30px;background-color:royalblue;}
+}
+
+body {
+    margin:0px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+main {
+    background:linear-gradient(90deg, rgb(152, 91, 180), rgb(108, 49, 136), rgb(62, 17, 83), rgb(49, 7, 68));
+    width:100%;
+    height:800px;
+    padding-top:100px;
+}
+.title {
+    margin-top:-30px;
+    font-size:80px;
+    margin-left:480px;
+    margin-bottom:20px;
+    display:none;
+    transition:all ease 0.2s;
+    color:white;
+}
+.title:hover {
+    font-size:100px;
+    margin-left:428px !important;
+    cursor:pointer;
+}
+.container {
+    width:280px;
+    height:330px;
+    background-color:white;
+    margin:auto;
+    border-radius:10px;
+    opacity:0.8;
+    border:2px solid black;
+    display:none;
+    transition:all ease 0.2s;
+    cursor:pointer;
+}
+.screen {
+    width:260px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:20px;
+    height:30px;
+    text-align:right;
+    line-height:30px;
+    font-family:arial;
+    font-size:20px;
+    outline:0;
+    border-radius:10px;
+    background-color:rgb(219, 216, 216);
+    cursor:pointer;
+}
+.btn {
+    width:40px;
+    height:40px;
+    margin-lefT:17px;
+    margin-top:18px;
+    font-family:arial;
+    font-size:20px;
+    text-align:center;
+    font-weight:bold;
+    outline:0;
+    cursor:pointer;
+}
+.Cal-Box {
+    margin-lefT:10px;
+    margin-right:10px;
+    margin-top:10px;
+    width:260px;
+    height:250px;
+    background-color:rgb(219, 216, 216);
+    border-radius:10px;
+    cursor:pointer;
+}
+.loading-off {
+    width:120px;
+    height:120px;
+    position:absolute;
+    margin-left:400px;
+    margin-top:200px;
+    display:none;
+    transition:all ease 0.5s;
+}
+.bolinha1 {
+    width:30px;
+    height:30px;
+    float:left;
+    background-color:royalblue;
+    margin-lefT:15px;
+    margin-right:10px;
+    margin-top:30px;
+    border-radius:20px;
+    animation-name:bolinha1;
+    animation-duration:4s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+}
+.bolinha2 {
+    width:30px;
+    height:30px;
+    display:right;
+    background-color:royalblue;
+    margin-lefT:60px;
+    margin-right:10px;
+    margin-top:30px;
+    border-radius:20px;
+    animation-name:bolinha2;
+    animation-duration:4s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+}
+
+@media only screen and (max-width:320px){
+    .title {
+    margin-top:-20px;
+    font-size:50px;
+    margin-left:35px;
+    margin-bottom:20px;
+    display:none;
+    transition:all ease 0.2s;
+    }
+}
+@media only screen and (min-width:375px) and (max-width:425px){
+    .title {
+    margin-top:-20px;
+    font-size:50px;
+    margin-left:70px;
+    margin-bottom:20px;
+    display:none;
+    transition:all ease 0.2s;
+    }
+}
+@media only screen and (min-width:425px) and (max-width:768px){
+    .title {
+    margin-top:-20px;
+    font-size:50px;
+    margin-left:90px;
+    margin-bottom:20px;
+    display:none;
+    transition:all ease 0.2s;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .title {
+    margin-top:-20px;
+    font-size:70px;
+    margin-left:215px;
+    margin-bottom:20px;
+    display:none;
+    transition:all ease 0.2s;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1025px){
+    .title {
+    margin-top:-20px;
+    font-size:80px;
+    margin-left:310px;
+    margin-bottom:20px;
+    display:none;
+    transition:all ease 0.2s;
+    }
+}
