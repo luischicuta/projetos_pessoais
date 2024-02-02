@@ -1,0 +1,109 @@
+* {
+    font-family:Arial;
+}
+body {
+    margin:0%;
+}
+.menu {
+    background-color:#2e2e2e;
+    height:60px;
+}
+.logo {
+    background-color:#2e2e2e;
+    color:white;
+    font-size:30px;
+    line-height:60px;
+    width:150px; 
+    height:60px;
+    margin-left:150px;
+    float:left;
+    cursor:pointer;
+}
+.opçoes {
+    float:right;
+    font-size:15px;
+    margin-right:150px;
+    background-color:#2e2e2e;
+    height:60px;
+    width:535px;
+}
+.opçoes ul,
+.opçoes li {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+.opçoes li {
+    float:left;
+    padding:10px;
+    margin:10px;
+    color:white;
+}
+.opçoes li:hover {
+    background-color:#3479ba;
+    cursor:pointer;
+}
+.estrutura1 {
+    height:270px;
+    color:white;
+    background-color:#3479ba;
+    padding-top:40px;
+}
+.frase1 {
+    background-color:#3479ba;
+    color:white;
+    width:400px;
+    height:30px;
+    margin-left:150px;
+    text-align:left;
+    padding-top:20px;
+    font-size:50px;
+}
+.frase2 {
+    background-color:#3479ba;
+    color:white;
+    width:400px;
+    margin-left:150px;
+    margin-top:-10px;
+    font-size:20px;
+}
+.homem {
+    float:right;
+    margin-top:-152px;
+    margin-right:210px;
+}
+.botao {
+    background-color:#ffc001;
+    width:200px;
+    height:60px;
+    margin-left:150px;
+    border-radius:10px;
+    text-align:center;
+    line-height:60px;
+    cursor:pointer;
+    color:black;
+}
+.frase3 {
+    font-size:20px;
+    font-weight:bold;
+    background-color:white;
+    width:180px;
+    margin:auto;
+}
+.imagens {
+    margin-top:20px;
+    margin-left:150px;
+    margin-right:150px;
+}
+.imagens img {
+    margin-left:15px;
+    margin-right:15px;
+}
+.rodape {
+    margin-top:30px;
+    text-align:center;
+    background-color:#3479ba;
+    height:40px;
+    line-height:40px;
+    color:white;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário do Aluno</title>
+        <meta charset="UTF-8"/>
+        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/>
+        <link href="assets/css/style.css" rel="stylesheet"/>
+        <link href="assets/images/logo browser.png" rel="shortcut icon" type="image/x-png"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="titulo">Cadastro do Aluno</div>
+            <div class="formulario">
+            <form>
+                <div class="lado-A">
+                    Nome Completo:
+                    <br/>
+                    <input type="text" placeholder="Nome Completo" required>
+                    <br/>
+                    CPF:
+                    <br/>
+                    <input type="text" placeholder="xxx.xxx.xxx-xx" required>
+                    <br/>
+                    Pai:
+                    <br/>
+                    <input type="text" placeholder="Nome do Pai" required>
+                    <br/>
+                    Mãe:
+                    <br/>
+                    <input type="text" placeholder="Nome da mãe" required>
+                    <br/>
+                    Sexo:
+                    <br/>
+                    <select name="sexo" required>
+                        <option value="0">--------</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Indefinido</option>
+                    </select>
+                </div>
+                <div class="lado-B">
+                    E-Mail do Responsável:
+                    <br/>
+                    <input type="email" placeholder="E-Mail do Responsável" required>
+                    <br/>
+                    Data de Nascimento:
+                    <br/>
+                    <input type="date" required>
+                    <br/>
+                    Telefone-Fixo:
+                    <br/>
+                    <input type="tel" placeholder="(xx) xxxx-xxxx">
+                    <br/>
+                    Celular:
+                    <br/>
+                    <input type="tel" placeholder="(xx) xxxxx-xxxx">
+                    <br/>
+                    Unidade de Ensino:
+                    <br/>
+                    <select name="unidade" required>
+                        <option value="0">--------</option>
+                        <option value="1">Cotia - SP</option>
+                        <option value="2">Pirassununga - SP</option>
+                        <option value="3">Jaguaré - SP</option>
+                        <option value="4">Osasco - SP</option>
+                        <option value="5">Niterói - RJ</option>
+                        <option value="6">Curitiba - PR</option>
+                        <option value="7">Blumenau - SC</option>
+                        <option value="8">Carapicuíba - SP</option>
+                        <option value="9">Guarujá - SP</option>
+                        <option value="10">Peruíbe - SP</option>
+                        <option value="11">Acre - ???</option>
+                        <option value="12">Nárnia - NA</option>
+                        <option value="13">Marte - VL</option>
+                    </select>
+                    <br/>
+                    <div class="botão">
+                        <input type="submit" value="Cadastrar"> <input type="button" value="Apagar Dados">
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

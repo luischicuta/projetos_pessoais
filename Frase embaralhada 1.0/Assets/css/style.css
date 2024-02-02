@@ -1,0 +1,21 @@
+body {
+    margin:0;
+    background-color:black;
+}
+
+.frase {
+    width:450px;
+    height:80px;
+    background-color:white;
+    margin:auto;
+    margin-top:200px;
+    text-align:center;
+    line-height:75px;
+    font-family:Arial;
+    font-size:70px;
+    color:green;
+    font-weight:bold;
+    border-radius:20px;
+    box-shadow:0px 2px 15px gray;
+    transition:all ease 1s;
+}

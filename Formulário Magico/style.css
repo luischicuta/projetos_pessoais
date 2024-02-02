@@ -1,0 +1,42 @@
+body {
+    margin:0px;
+}
+.container {
+    width:800px;
+    height:590px;
+    background-color:#CCC;
+    margin:auto;
+    margin-top:10px;
+    border-radius:20px;
+    padding-top:20px;
+}
+.perguntas {
+    width:600px;
+    height:500px;
+    margin:auto;
+    background-color:white;
+}
+.titulo {
+    margin:auto;
+    text-align:center;
+}
+.pergunta-left {
+    margin-top:30px;
+    margin-left:65px;
+    float:left;
+    height:25px;
+    outline:0;
+    border-radius:10px;
+    border:1px solid black;
+    font-size:15px;
+    font-family:Arial;
+}
+.botton {
+    margin-top:30px;
+    margin-left:238px;
+}
+.frase {
+    margin-top:25px;
+    text-align:center;
+    margin-left:240px;
+}

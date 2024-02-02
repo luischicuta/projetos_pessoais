@@ -1,0 +1,58 @@
+body {
+    margin:0px;
+    font-family:Arial;
+}
+.container {
+    width:1000px;
+    margin:auto;
+    height:500px;
+    margin-top:40px;
+    border:1px solid #CCC;
+}
+.titulo {
+    width:500px;
+    margin:auto;
+    background-color:rgb(233, 231, 231);
+    text-align:center;
+    font-size:30px;
+    color:rgb(70, 70, 70);
+    font-weight:bold;
+}
+.formulario {
+    width:800px;
+    margin:auto;
+    padding-top:40px;
+    padding-bottom:10px;
+}
+.lado-A, .lado-B {
+    font-size:18px;
+    margin-top:0px;
+}
+.lado-A {
+    float:left;
+}
+.lado-B {
+    float:right;
+}
+.formulario form input {
+    height:30px;
+    margin-top:5px;
+    width:300px;
+    margin-bottom:10px;
+}
+.formulario form select {
+    height:30px;
+    width:300px;
+    margin-top:5px;
+}
+.botão {
+    margin-top:20px;
+    display:inline-block;
+}
+.formulario form .botão input {
+    width:100px;
+    border-radius:30px;
+    outline:0;
+    color:white;
+    background-color:rgb(147, 172, 211);
+}
